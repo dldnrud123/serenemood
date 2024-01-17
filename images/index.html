@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balletcore Card News</title>
+    <link rel="shortcut icon" href="images/icons/logo_favicon/logo_favicon.ico" type="image/x-icon">
+    <!--2. 연결 시켜야 할 파일을 연결 시킨다. 복사해서 head안에 본인 css파일 위에 위치 시킨다.-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--내가 만든 css파일이 가장 밑에 오게끔 해주세요!-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/CARD_NEWS_MAIN_PAGE.png" alt="MAIN_PAGE"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_1.png" alt="SUB_PAGE_1"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_2.png" alt="SUB_PAGE_2"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_3.png" alt="SUB_PAGE_3"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_4.png" alt="SUB_PAGE_4"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_5.png" alt="SUB_PAGE_5"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_SUB_PAGE_6.png" alt="SUB_PAGE_6"></div>
+            <div class="swiper-slide"><img src="images/CARD_NEWS_LAST_PAGE.png" alt="LAST"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 50,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
