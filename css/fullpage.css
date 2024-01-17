@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+#fp-nav ul li a.active span {
+    width: 20px;
+    height: 20px;
+    margin: -11px 0 0 -9px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background-color: #be8f7d;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #fff;
+    font-weight: bold;
+}
+
+#concept1 .fp-overflow,
+#concept2 .fp-overflow,
+#concept3 .fp-overflow 
+#contact .fp-overflow {
+    height: auto;
+}
+
+/* 특정한 페이지 클래스 값에 색상 바꾸기 */
+/* body.fp-scroll-mac.fp-viewing-page4 #fp-nav ul li a span {
+    background-color: lightskyblue;
+}*/

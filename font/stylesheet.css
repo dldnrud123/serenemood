@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Gloock';
+    src: url('Gloock-Regular.eot');
+    src: url('Gloock-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gloock-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cherolina';
+    src: url('Cherolina.eot');
+    src: url('Cherolina.eot?#iefix') format('embedded-opentype'),
+        url('Cherolina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansBold.eot');
+    src: url('GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+        url('GmarketSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansMedium.eot');
+    src: url('GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+        url('GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansLight.eot');
+    src: url('GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+        url('GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MuseumClassic';
+    src: url('MuseumClassicLightA.eot');
+    src: url('MuseumClassicLightA.eot?#iefix') format('embedded-opentype'),
+        url('MuseumClassicLightA.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MuseumClassic';
+    src: url('MuseumClassicMediumA.eot');
+    src: url('MuseumClassicMediumA.eot?#iefix') format('embedded-opentype'),
+        url('MuseumClassicMediumA.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MuseumClassic';
+    src: url('MuseumClassicBoldA.eot');
+    src: url('MuseumClassicBoldA.eot?#iefix') format('embedded-opentype'),
+        url('MuseumClassicBoldA.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

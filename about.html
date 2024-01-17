@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서린무드 - 감성 인테리어 소품샵</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- 풀페이지 -->
+    <link rel="stylesheet" href="lib/dist/fullpage.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <!-- modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+
+    <!-- 제이쿼리 파일을 제일 상단에 연결시킨다. -->
+    <!-- <script src="lib/jquery-3.7.1.min.js"></script> -->
+    <script src="lib/dist/fullpage.min.js"></script>
+
+    <script>
+        $(function () {
+            //fullpage
+            //simple.html 하단의 제이쿼리 내용을 복사 붙여넣는다.
+            var myFullpage = new fullpage('#fullpage', {
+                //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+                //navigation-vertical.html 하단의 제이쿼리 가져오기
+                navigation: true,
+                navigationPosition: 'right',
+                //anchors 와 이름과 다르게 작성한다.
+                //한글작성도 가능
+                navigationTooltips: ['# intro', '# serene\' mood', '# concept1', '# concept2', '# concept3', '# contact us', '# end'],
+                //responsice-width.html
+                //반응형은 가로 900px이하 일 때, 스크롤바 생성
+                responsiveWidth: 900
+            });
+
+        });//jquery end
+    </script>
+
+    <style>
+        #header {
+            overflow: hidden;
+        }
+
+        .menu_box {
+            top: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="fullpage"><!-- #top -->
+
+        <!-- #header -->
+        <div id="header" class="section active">
+            <div class="video_wrapper">
+                <video class="about_video" src="./images/video/about.mp4" loop muted autoplay playsinline></video>
+            </div>
+            <div class="a_bn_txt">
+                <h1>serene' mood</h1>
+                <img src="./images/bn_x_shape.png" alt="X모양">
+                <p>여운이 느껴지는 감성 인테리어 소품샵<br>
+
+                    서린무드와 함께하세요 !</p>
+            </div>
+
+            <div class="header_inner">
+                <div class="header_f_box">
+                    <div class="left_box">
+                        <h1 class="logo">
+                            <a href="./index.html">
+                                <img src="./images/logo_main.png" alt="로고이미지">
+                            </a>
+                        </h1>
+                        <button id="btn_menu">menu</button>
+                        <p class="h_menu">
+                            <img src="./images/h_menu.png" alt="햄버거메뉴버튼">
+                        </p>
+                    </div>
+
+                    <ul class="right_box">
+                        <li>
+                            <a href="#modal" class="circle_icon" rel="modal:open">
+                                <img src="./images/icon_search.png" alt="검색아이콘">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="circle_icon" href="#">
+                                <img src="./images/icon_cart.png" alt="장바구니 아이콘">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="circle_icon" href="#">
+                                <img src="./images/icon_share.png" alt="공유 아이콘">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- #modal -->
+            <div id="modal" class="modal">
+                <div class="modal_inner">
+                    <div class="f_search_box">
+                        <input type="search" id="search_box" placeholder="검색어를 입력하세요">
+                        <div class="search_icon circle_icon2">
+                            <img src="./images/icon_search.png" alt="검색아이콘">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu bar -->
+            <div class="menu_box">
+                <div class="close_box">x</div>
+
+                <h2><a href="./index.html">HOME</a></h2>
+
+                <h2><a href="./about.html">ABOUT</a></h2>
+                <p><a href="./about.html">serene mood</p>
+
+                <h2>STORE</h2>
+                <p><a href="./store.html#0">선물&시즌</a></p>
+                <p><a href="./store.html#1" onclick="location.reload();">홈데코</a></p>
+                <p><a href="./store.html#2">패브릭</a></p>
+                <p><a href="./store.html#3">키친</a></p>
+                <p><a href="./store.html#4">욕실</a></p>
+                <p><a href="./store.html#5">가든</a></p>
+                <p><a href="./store.html#6">조명</a></p>
+
+                <h2>SERVICE</h2>
+                <p><a href="./package.html">선물포장</a></p>
+                <p><a href="./onedayClass.html">원데이클래스</a></p>
+
+                <h2>EVENT</h2>
+                <p><a href="./event.html">이벤트</a></p>
+
+            </div>
+
+        </div>
+
+        <!-- #serene_mood -->
+        <div id="serene_mood" class="section">
+            <div class="serene_box">
+                <h1>&nbsp;&nbsp;#OUR SENSIBILITY</h1>
+                <ul class="concept_box">
+                    <li><img src="./images/about_mood_1.png" alt="">
+                        <p class="hover_txt">clean</p>
+                    </li>
+                    <li><img src="./images/about_mood_2.png" alt="">
+                        <p class="hover_txt">vibe</p>
+                    </li>
+                    <li><img src="./images/about_mood_3.png" alt="">
+                        <p class="hover_txt">bold</p>
+                    </li>
+                </ul>
+
+                <div class="sm_img_box">
+                    <img src="./images/about_serene.png" alt="">
+                </div>
+            </div>
+
+            <div class="mood_box">
+                <div class="sm_img_box">
+                    <img src="./images/about_mood.png" alt="">
+                </div>
+                <ul class="concept_box">
+                    <li>
+                        <img src="./images/about_serene_1.png" alt="">
+                        <p class="hover_txt">cozy</p>
+                    </li>
+                    <li>
+                        <img src="./images/about_serene_2.png" alt="">
+                        <p class="hover_txt">warm</p>
+                    </li>
+                    <li>
+                        <img src="./images/about_serene_3.png" alt="">
+                        <p class="hover_txt">heimish</p>
+                    </li>
+                </ul>
+                <h1>#OUR SENSIBILITY&nbsp;&nbsp;</h1>
+
+            </div>
+        </div>
+
+        <!-- #concept1 -->
+        <div id="concept1" class="section">
+            <div class="concept_inner">
+                <h1>#CONCEPT</h1>
+                <div class="concept_f_box">
+                    <div class="logo_concept">
+                        <dl class="m_logo_concept">
+                            <dt><img src="./images/about_logo1.png" alt="#"></dt>
+                            <dd>고요하고 잔잔한 느낌의 진한 네이비와,<br>
+
+                                따뜻하고 포근한 느낌을 가진 핑크컬러를 사용하여
+                                <br><br>
+
+
+                                <b>“당신의 공간에, 잔잔한 여운을 선사합니다.”</b><br>
+
+                                라는 서린무드의 슬로건을 표현하였습니다.
+
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #concept2 -->
+        <div id="concept2" class="section">
+            <div class="concept_inner">
+                <!-- <h1>#CONCEPT 2</h1> -->
+                <div class="concept_f_box">
+                    <div class="logo_concept">
+
+                        <dl class="s_logo_concept">
+                            <dt><img src="./images/about_logo2.png" alt="#"></dt>
+                            <dd>조명을 중심으로 원을 반으로 나누어, <br>
+
+                                위쪽은 빛이 닿는 밝은색<br>
+
+                                아랫쪽은 빛이 안닿는 어두운색을 입혀,<br>
+
+                                서린무드 특유의 묵직하면서도 따뜻한 컨셉을 나타냈습니다. </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #concept3 -->
+        <div id="concept3" class="section">
+            <div class="concept_inner">
+                <!-- <h1>#CONCEPT 3</h1> -->
+                <div class="concept_f_box">
+                    <div class="concept_cercle">
+                        <div class="cercle_text">
+                            <h1>'SERENE MOOD'</h1>
+                            <h2>SERENE + MOOD = SERENE' MOOD</h2>
+                            <p>
+                                지친 현대인들의 프라이버시한 공간을<br>
+                                조금 더 감각적이고 감성있게 꾸밀 수 있도록<br>
+                                유니크한 소품들을 전시 및 판매하는<br>
+                                <b>인테리어 소품샵 브랜드</b>입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #contact -->
+        <div id="contact" class="section">
+            <div class="contact_inner">
+                <h1># CONTACT US</h1>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.9226534723607!2d129.05911748808919!3d35.15854968828655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb66904a44f1%3A0xb76985be30944722!2z67aA7IKw6rSR7Jet7IucIOu2gOyCsOynhOq1rCDsoITtj6zrj5kgNjYzLTU!5e0!3m2!1sko!2skr!4v1704697841502!5m2!1sko!2skr"
+                        width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <ul class="info_store">
+                    <li>
+                        <img src="./images/ico_contact_location.png" alt="">
+                        <p>LOCATION</p>
+                        <p>부산진구 서전로 37번길</p>
+                    </li>
+                    <li>
+                        <img src="./images/ico_contact_mail.png" alt="">
+                        <p>MAIL</p>
+                        <p>serene_mood@naver.com</p>
+                    </li>
+                    <li>
+                        <img src="./images/ico_contact_call.png" alt="">
+                        <p>CALL</p>
+                        <p>010-1234-4028</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- #footer -->
+        <div class="section fp-auto-height" id="footer">
+
+            <div class="footer_inner">
+                <ul class="foot_line1">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer_inner">
+                <ul class="foot_line2">
+                    <li>CUSTOMER CENTER<br>
+
+                        051-0515-0001 | 고객센터 운영시간 : 화-토 12:30 - 19:00 (일,월 휴무)<br>
+
+                        쇼룸 운영시간 : 화-토 13:00-19:00 (일,월 휴무)
+                    </li>
+                    <li>BANK INFO<br>
+
+                        신한은행 110-4919-03130 이우경
+                    </li>
+                    <li>EXCHANGE & RETURN<br>
+
+                        부산 부산진구 서전로37번길 | CJ대한통운 1588-1255</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer_inner">
+                <ul class="foot_line3">
+                    <li class="sub_logo"><a href="#"><img src="./images/sub_logo.png" alt="서브로고"></a></li>
+                    <li class="sns_box">
+                        <ul class="sns_icon">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sns_icon1.png" alt="sns1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sns_icon2.png" alt="sns2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/sns_icon3.png" alt="sns3">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- #fullpage 끝나는 지점에 기입한 태그는 오류가 많이 생김. footer는 #fullpage안에 기입한다. -->
+    </div><!-- #fullpage end -->
+
+    <!-- DOM 로드 후 실행 할 것! -->
+    <script src="./js/script.js"></script>
+</body>
+
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서린무드 - 감성 인테리어 소품샵</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<style>
+            #header {
+            overflow: hidden;
+        }
+</style>
+<body>
+
+
+    <!-- #top -->
+    <div id="top">
+        <!-- Swiper -->
+        <div class="swiper top_ad">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">지금 회원가입 시 3,000P의 혜택을 드립니다 !</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">&lt; New Open ! &gt; 선물 포장서비스/원데이클래스</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">&lt; New Item ! &gt; 봄맞이 SPRING 보타닉컬렉션 출시!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- #header -->
+    <div id="header">
+        <video src="./images/video/main.mp4" loop muted autoplay playsinline></video>
+        <div class="header_inner">
+            <div class="header_f_box">
+                <div class="left_box">
+                    <h1 class="logo">
+                        <a href="./index.html">
+                            <img src="./images/logo_main.png" alt="로고이미지">
+                        </a>
+                    </h1>
+                    <button id="btn_menu">menu</button>
+                    <p class="h_menu">
+                        <img src="./images/h_menu.png" alt="햄버거메뉴버튼">
+                    </p>
+                </div>
+
+                <ul class="right_box">
+                    <li>
+                        <a href="#modal" class="circle_icon" rel="modal:open">
+                            <img src="./images/icon_search.png" alt="검색아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="circle_icon" href="#">
+                            <img src="./images/icon_cart.png" alt="장바구니 아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="circle_icon" href="#">
+                            <img src="./images/icon_share.png" alt="공유 아이콘">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- #modal -->
+        <div id="modal" class="modal">
+            <div class="modal_inner">
+                <div class="f_search_box">
+                    <input type="search" id="search_box" placeholder="검색어를 입력하세요">
+                    <div class="search_icon circle_icon2">
+                        <img src="./images/icon_search.png" alt="검색아이콘">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu bar -->
+        <div class="menu_box">
+            <div class="close_box">x</div>
+
+            <h2><a href="./index.html">HOME</a></h2>
+
+            <h2><a href="./about.html">ABOUT</a></h2>
+            <p><a href="./about.html">serene mood</p>
+
+            <h2>STORE</h2>
+            <p><a href="./store.html#0">선물&시즌</a></p>
+            <p><a href="./store.html#1" onclick="location.reload();">홈데코</a></p>
+            <p><a href="./store.html#2">패브릭</a></p>
+            <p><a href="./store.html#3">키친</a></p>
+            <p><a href="./store.html#4">욕실</a></p>
+            <p><a href="./store.html#5">가든</a></p>
+            <p><a href="./store.html#6">조명</a></p>
+
+            <h2>SERVICE</h2>
+            <p><a href="./package.html">선물포장</a></p>
+            <p><a href="./onedayClass.html">원데이클래스</a></p>
+
+            <h2>EVENT</h2>
+            <p><a href="./event.html">이벤트</a></p>
+
+        </div>
+
+
+    </div>
+
+    <!-- #pkg -->
+    <div id="pkg">
+        <div class="pkg_inner">
+            <h1 class="eng_title">NEW OPEN</h1>
+            <div class="pkg_f_box">
+                <div class="pkg_img_box">
+                    <img class="pkg_img angle2" src="./images/pkg_service.png" alt="">
+                </div>
+                <div class="pkg_txt_box">
+                    <h1 class="h1_color1">
+                        PAKAGING<br>
+                        ONEDAY CLASS
+                    </h1>
+                    <p class="pkg_btn1"><a href="./onedayClass.html">자세히보기</a></p>
+                </div>
+                <div class="pkg_txt_box">
+                    <h1 class="h1_color2">
+                        GIFT<br>
+                        WRAPPING<br>
+                        SERVICE
+                    </h1>
+                    <p class="pkg_btn2"><a href="./package.html">자세히보기</a></p>
+                </div>
+                <div class="pkg_img_box">
+                    <img class="pkg_img angle" src="./images/pkg_cls.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #banner1 -->
+    <div id="banner1">
+        <img src="./images/logo_banner1.png" alt="배너로고">
+        <p>당신의 공간에,<br>
+            잔잔한 여운을 선사합니다.</p>
+    </div>
+
+    <!-- #new(season) Item -->
+    <div id="new">
+        <div class="new_inner">
+            <h1 class="eng_title">NEW ITEM's</h1>
+            <h2 class="sub_title ">2024's Spring</h2>
+            <div class="new_slide">
+                <div class="item_info_box">
+                    <div id="item_info_0" class="item_info">
+                        <div class="new_img_wrapper">
+                            <img src="./images/new_item0.png" alt="신상품상세보기이미지">
+
+                            <div id="botanic_l" class="botanic_l">
+                                <img src="./images/new_botanic_left.png" alt="">
+                            </div>
+                            <div id="botanic_r" class="botanic_r">
+                                <img src="./images/new_botanic_right.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="new_text_box">
+                            <h2 class="new_title">서린무드 보타닉 쿠션</h3>
+
+                                <p class="new_comment">
+                                    봄내음 물씬 풍길거 같은 <br>
+
+                                    2024 봄 시즌 보타닉 컬렉션!<br>
+
+                                    소파 위를 산뜻하게 장식해줄 아이템!
+                                </p>
+
+                                <p class="new_price">17,800원</p>
+
+                                <p class="new_btn"><a href="./store.html#0">상세보기 ></a></p>
+                        </div>
+                    </div>
+                    <div id="item_info_1" class="item_info">
+                        <div class="new_img_wrapper">
+                            <img src="./images/new_item1.png" alt="신상품상세보기이미지">
+                            <div id="botanic_l" class="botanic_l">
+                                <img src="./images/new_botanic_left.png" alt="">
+                            </div>
+                            <div id="botanic_r" class="botanic_r">
+                                <img src="./images/new_botanic_right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="new_text_box">
+                            <h2 class="new_title">서린무드 써클 화병</h3>
+
+                                <p class="new_comment">
+                                    투명하고 맑은 유리에 <br>
+
+                                    현대적인 감각의 써클디자인을 더해<br>
+
+                                    집안을 녹색으로!
+                                </p>
+
+                                <p class="new_price">29,800원</p>
+
+                                <p class="new_btn"><a href="#">상세보기 ></a></p>
+                        </div>
+                    </div>
+                    <div id="item_info_2" class="item_info">
+                        <div class="new_img_wrapper">
+                            <img src="./images/new_item2.png" alt="신상품상세보기이미지">
+                            <div id="botanic_l" class="botanic_l">
+                                <img src="./images/new_botanic_left.png" alt="">
+                            </div>
+                            <div id="botanic_r" class="botanic_r">
+                                <img src="./images/new_botanic_right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="new_text_box">
+                            <h2 class="new_title">서린무드 보타닉 티코스터</h3>
+
+                                <p class="new_comment">
+                                    여러가지 색상의 봄색깔을 입힌 <br>
+
+                                    2024 봄 시즌 보타닉 컬렉션 티코스터!
+                                </p>
+
+                                <p class="new_price">7,600원</p>
+
+                                <p class="new_btn"><a href="#">상세보기 ></a></p>
+                        </div>
+                    </div>
+                    <div id="item_info_3" class="item_info">
+                        <div class="new_img_wrapper">
+                            <img src="./images/new_item3.png" alt="신상품상세보기이미지">
+                            <div id="botanic_l" class="botanic_l">
+                                <img src="./images/new_botanic_left.png" alt="">
+                            </div>
+                            <div id="botanic_r" class="botanic_r">
+                                <img src="./images/new_botanic_right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="new_text_box">
+                            <h2 class="new_title">서린무드 에어 퍼퓸</h3>
+
+                                <p class="new_comment">
+                                    꽃피는 계절 봄! <br>
+
+                                    여러가지 꽃의 향을 담았다. <br>
+
+                                    집안을 꽃향기로 가득하게!
+                                </p>
+
+                                <p class="new_price">13,200원</p>
+
+                                <p class="new_btn"><a href="#">상세보기 ></a></p>
+                        </div>
+                    </div>
+                    <div id="item_info_4" class="item_info">
+                        <div class="new_img_wrapper">
+                            <img src="./images/new_item4.png" alt="신상품상세보기이미지">
+                            <div id="botanic_l" class="botanic_l">
+                                <img src="./images/new_botanic_left.png" alt="">
+                            </div>
+                            <div id="botanic_r" class="botanic_r">
+                                <img src="./images/new_botanic_right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="new_text_box">
+                            <h2 class="new_title">서린무드 봄 스페셜 접시</h3>
+
+                                <p class="new_comment">
+                                    노랑노랑한 개나리 꽃으로 물들여<br>
+
+                                    달달한 향마저 느껴질 것 같은<br>
+
+                                    키친 추천 신상아이템!!
+                                </p>
+
+                                <p class="new_price">12,200원</p>
+
+                                <p class="new_btn"><a href="#">상세보기 ></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/new_item1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/new_item2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/new_item3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/new_item4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/new_item0.png" alt="">
+                        </div>
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+
+            <div class="new_acdn">
+                <ul id="board">
+                    <li class="acda1">
+                        <img src="./images/new_tile_0.png" alt="">
+                        <div>
+                            <a href="#">
+                                <img src="./images/m_new_item0.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="acda2">
+                        <img src="./images/new_tile_1.png" alt="">
+                        <div>
+                            <a href="#">
+                                <img src="./images/m_new_item1.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="acda3">
+                        <img src="./images/new_tile_2.png" alt="">
+                        <div>
+                            <a href="#">
+                                <img src="./images/m_new_item2.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="acda4">
+                        <img src="./images/new_tile_3.png" alt="">
+                        <div>
+                            <a href="#">
+                                <img src="./images/m_new_item3.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="acda5">
+                        <img src="./images/new_tile_4.png" alt="">
+                        <div>
+                            <a href="#">
+                                <img src="./images/m_new_item4.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="acda6">
+                        <img src="./images/new_tile_5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- #top3Item -->
+    <div id="best">
+        <div class="best_inner">
+            <h1 class="eng_title h1_color2">TOP3 ITEM's</h1>
+            <h2 class="sub_title">Best Goods</h2>
+
+            <!-- top3부분 카테고리 슬라이드 -->
+            <div class="category">
+                <!-- Swiper -->
+                <div class="swiper categories">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_0.png" alt="...">
+                            <p class="title_box">홈데코</p>
+                        </div>
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_1.png" alt="...">
+                            <p class="title_box">패브릭</p>
+                        </div>
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_2.png" alt="...">
+                            <p class="title_box">키친</p>
+                        </div>
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_3_3.png" alt="...">
+                            <p class="title_box">욕실</p>
+                        </div>
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_4.png" alt="...">
+                            <p class="title_box">가든</p>
+                        </div>
+                        <div class="swiper-slide box-wrapper">
+                            <img src="./images/top3_category_5.png" alt="...">
+                            <p class="title_box">조명</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div id="h_group" class="top3Item">
+                <!-- Swiper -->
+                <div id="group_0" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lvr_item1.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>보타닉 클래식 러그</p>
+                                    <b>21,500원</b>
+                                    <a href="./store.html#1">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lvr_item2.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>고급 패턴 고리형 커튼</p>
+                                    <b>38,900원</b>
+                                    <a href="./store.html#1">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lvr_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>보온 카페트형 라탄</p>
+                                    <b>98,400원</b>
+                                    <a href="./store.html#1">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="group_1" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_fbr_item1.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>블루 타탄패턴 윈터 패브릭</p>
+                                    <b>42,800원</b>
+                                    <a href="./store.html#2">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_fbr_item2.jpg" alt="">
+
+                                </div>
+                                <div class="item_txt">
+                                    <p>스탠다드 기모 이불</p>
+                                    <b>27,200원</b>
+                                    <a href="./store.html#2">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_fbr_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>기모 양면 레드벨벳 패브릭</p>
+                                    <b>31,600원</b>
+                                    <a href="./store.html#2">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="group_2" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_ktc_item1.jpg" alt="">
+
+                                </div>
+                                <div class="item_txt">
+                                    <p>고급면 블루플라워 행주</p>
+                                    <b>6,000원</b>
+                                    <a href="./store.html#3">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_ktc_item2.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>2way수납형 카트</p>
+                                    <b>51,900원</b>
+                                    <a href="./store.html#3">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_ktc_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>마개형 압축 패트set</p>
+                                    <b>27,500원</b>
+                                    <a href="./store.html#3">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="group_3" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_btr_item1.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>30수 고급 수건세트(4p)</p>
+                                    <b>15,200원</b>
+                                    <a href="./store.html#4">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_btr_item2.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>그린 욕실 선반 세트</p>
+                                    <b>29,800원</b>
+                                    <a href="./store.html#4">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_btr_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>스퀘어 문양 발매트</p>
+                                    <b>25,900원</b>
+                                    <a href="./store.html#4">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="group_4" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_grd_item1.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>조화 레드세트</p>
+                                    <b>26,500원</b>
+                                    <a href="./store.html#7">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_grd_item2.jpg" alt="">
+
+                                </div>
+                                <div class="item_txt">
+                                    <p>조화 믹스세트</p>
+                                    <b>32,900원</b>
+                                    <a href="./store.html#7">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_grd_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>스퀘어 월계수 리스</p>
+                                    <b>31,800원</b>
+                                    <a href="./store.html#7">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="group_5" class="swiper top3Items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lgt_item1.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>푸른 도자기 스탠드</p>
+                                    <b>42,500원</b>
+                                    <a href="./store.html#5">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lgt_item2.jpg" alt="">
+
+                                </div>
+                                <div class="item_txt">
+                                    <p>금장 굴곡 스탠드</p>
+                                    <b>39,600원</b>
+                                    <a href="./store.html#5">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_card">
+                                <div class="top3_img_wrapper">
+                                    <img src="./images/top3_lgt_item3.jpg" alt="">
+                                </div>
+                                <div class="item_txt">
+                                    <p>글라스 이너 조명</p>
+                                    <b>27,600원</b>
+                                    <a href="./store.html#5">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #thema Item -->
+    <div id="thema">
+        <div class="thema_inner">
+            <h1 class="eng_title">INTERIOR DESINE THEMA</h1>
+            <div class="thema_box">
+                <div class="thema_img">
+                    <img src="./images/bg_thema.jpg" alt="테마사진">
+                </div>
+                <div id="plus_box">
+                    <img id="icon_plus1" class="plus_cursor" src="./images/icon_plus.png" alt="">
+                    <img id="icon_plus2" class="plus_cursor" src="./images/icon_plus.png" alt="">
+                    <img id="icon_plus3" class="plus_cursor" src="./images/icon_plus.png" alt="">
+                    <img id="icon_plus4" class="plus_cursor" src="./images/icon_plus.png" alt="">
+                </div>
+                <div class="thema_info_box">
+
+                    <div id="t_info_1" class="t_info">
+                        <div class="t_info_fbox">
+                            <div class="t_img_box">
+                                <img src="./images/thema_1.jpg" alt="사진">
+                            </div>
+                            <div class="t_txt_box">
+                                <h2>카로란 메탈 테스크 램프</h2>
+                                <p class="t_cmt">깔끔하고 적당한 크기로 <br>
+
+                                    책상위의 무드를 책임져줄<br>
+
+                                    가성비 아이템!</p>
+                                <p class="t_price">37,800 원</p>
+                                <div class="t_btn">
+                                    <a href="./store.html#6">더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="t_info_2" class="t_info">
+                        <div class="t_info_fbox">
+                            <div class="t_img_box">
+                                <img src="./images/thema_2.jpg" alt="사진">
+                            </div>
+                            <div class="t_txt_box">
+                                <h2>트랜드 미니 화분</h2>
+                                <p class="t_cmt">아담한 크기로 <br>
+
+                                    어디든 얹어만 놓으면<br>
+
+                                    잘어울리는 아이템!</p>
+                                <p class="t_price">30,800 원</p>
+                                <div class="t_btn">
+                                    <a href="./store.html#5">더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="t_info_3" class="t_info">
+                        <div class="t_info_fbox">
+                            <div class="t_img_box">
+                                <img src="./images/thema_3.jpg" alt="사진">
+                            </div>
+                            <div class="t_txt_box">
+                                <h2>화이트 프레임 액자</h2>
+                                <p class="t_cmt">하얀색의 안정감을 줘 <br>
+
+                                    어디든 걸기만해도<br>
+
+                                    밝은 느낌을 표현가능!</p>
+                                <p class="t_price">12,900 원</p>
+                                <div class="t_btn">
+                                    <a href="./store.html#1">더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="t_info_4" class="t_info">
+                        <div class="t_info_fbox">
+                            <div class="t_img_box">
+                                <img src="./images/thema_4.jpg" alt="사진">
+                            </div>
+                            <div class="t_txt_box">
+                                <h2>원통형 마블 펜홀더</h2>
+                                <p class="t_cmt">고급스런 무늬로 <br>
+
+                                    포인트 아이템으로 <br>
+
+                                    책상위에 올리기 딱좋음!</p>
+                                <p class="t_price">37,800 원</p>
+                                <div class="t_btn">
+                                    <a href="./store.html#1">더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="slide2">
+                <div class="slide_inner">
+                    <ul>
+                        <li>the unique thema of serene'mood</li>
+                        <li>the unique thema of serene'mood</li>
+                    </ul>
+                    <ul>
+                        <li>the unique thema of serene'mood</li>
+                        <li>the unique thema of serene'mood</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #timesale -->
+    <div id="time">
+        <div class="time_inner">
+            <h1 class="eng_title">TIME SALE</h1>
+            <h3>할인마감까지 남은시간</h3>
+            <h2 id="timer_box" class="sub_title">
+                <p id="timer" class="timer">please wait..</b>
+                <p id="finished" class="timer">판매종료</b>
+            </h2>
+            <div class="sale_item_box">
+                <div id="sub_circle">
+                    <div id="circle_0" class="circle_hover"></div>
+                    <div id="circle_1" class="circle_s1 circle_hover"></div>
+                    <div id="circle_2" class="circle_s2 circle_hover"></div>
+                </div>
+                <div id="main_item_box">
+                    <div id="main_item_1">
+                        <div id="circle_L1" class="circle_L"></div>
+                        <div class="sale_text">
+                            <div id="" class="sale_item1">
+                                <h3 class="item_nm">아바커스 스탠드 라이트</h3>
+                                <p class="item_EA">남은수량 12개</p>
+                                <p class="before_price">102,000원</p>
+                                <p class="after_price">61,200원</p>
+                                <p class="item_buy_btn">
+                                    <a href="./store.html#6">구매하기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main_item_2">
+                        <div id="circle_L2" class="circle_L"></div>
+                        <div class="sale_text">
+                            <div id="" class="sale_item1">
+                                <h3 class="item_nm">스틸 스타일 수도</h3>
+                                <p class="item_EA">남은수량 6개</p>
+                                <p class="before_price">72,000원</p>
+                                <p class="after_price">32,800원</p>
+                                <p class="item_buy_btn">
+                                    <a href="./store.html#4">구매하기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main_item_3">
+                        <div id="circle_L3" class="circle_L"></div>
+                        <div class="sale_text">
+                            <div id="" class="sale_item1">
+                                <h3 class="item_nm">라탄 빨래 바구니</h3>
+                                <p class="item_EA">남은수량 19개</p>
+                                <p class="before_price">32,300원</p>
+                                <p class="after_price">11,200원</p>
+                                <p class="item_buy_btn">
+                                    <a href="./store.html#1">구매하기</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #instagram -->
+    <div id="insta">
+        <div class="insta_inner">
+            <h1 class="eng_title">FOLLOW INSTAGRAM</h1>
+            <h2>@SERENE_MOOD</h2>
+            <div id="slide">
+                <div class="slide_inner right_img">
+                    <ul>
+                        <li><a href="#"><img src="./images/insta_item1.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item2.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item3.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item4.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item5.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item6.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item7.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item8.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item9.jpg" alt="슬라이드 이미지"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="./images/insta_item1.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item2.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item3.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item4.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item5.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item6.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item7.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item8.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item9.jpg" alt="슬라이드 이미지"></a></li>
+                    </ul>
+                </div>
+                <div class="slide_inner left_img">
+                    <ul>
+                        <li><a href="#"><img src="./images/insta_item10.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item11.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item12.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item13.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item14.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item15.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item16.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item17.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item18.jpg" alt="슬라이드 이미지"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="./images/insta_item10.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item11.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item12.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item13.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item14.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item15.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item16.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item17.jpg" alt="슬라이드 이미지"></a></li>
+                        <li><a href="#"><img src="./images/insta_item18.jpg" alt="슬라이드 이미지"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #footer -->
+    <div id="footer">
+        <div class="footer_inner">
+            <ul class="foot_line1">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GUIDE</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer_inner">
+            <ul class="foot_line2">
+                <li>CUSTOMER CENTER<br>
+
+                    051-0515-0001 | 고객센터 운영시간 : 화-토 12:30 - 19:00 (일,월 휴무)<br>
+
+                    쇼룸 운영시간 : 화-토 13:00-19:00 (일,월 휴무)
+                </li>
+                <li>BANK INFO<br>
+
+                    신한은행 110-4919-03130 이우경
+                </li>
+                <li>EXCHANGE & RETURN<br>
+
+                    부산 부산진구 서전로37번길 | CJ대한통운 1588-1255</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer_inner">
+            <ul class="foot_line3">
+                <li class="sub_logo"><a href="#"><img src="./images/sub_logo.png" alt="서브로고"></a></li>
+                <li class="sns_box">
+                    <ul class="sns_icon">
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns_icon1.png" alt="sns1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns_icon2.png" alt="sns2">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns_icon3.png" alt="sns3">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- DOM 로드 후 실행 할 것! -->
+    <script src="./js/script.js"></script>
+</body>
+
+<script>
+
+</script>
+
+</html>
