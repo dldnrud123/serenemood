@@ -21,11 +21,36 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <style>
-            #header {
-            overflow: hidden;
-        }
+    #header {
+        overflow: hidden;
+    }
 </style>
+
+<script>
+    // $(document).ready(function () {
+    //     //로딩화면 출력 
+    //     // $("backL").css("display", "block");
+    //     $("backL").css("display", "none");
+    // });
+
+
+    $(document).ready(function () {
+        
+        $('#loading').css({"display":"block"});
+    });
+
+    $(window).load(function () {
+        $('#loading').css({"display":"none"});
+    });
+</script>
+
 <body>
+
+    <!-- loading -->
+    <div id="loading">
+        <img src="./images/loading.gif" alt="loading">
+        <h3>LOADING...</h3>
+    </div>
 
 
     <!-- #top -->
