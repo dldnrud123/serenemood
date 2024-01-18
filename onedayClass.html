@@ -73,7 +73,7 @@
                     </h1>
                     <button id="btn_menu">menu</button>
                     <p class="h_menu">
-                        <img src="./images/h_menu.png" alt="햄버거메뉴버튼">
+                        <img src="./images/h_menu1.png" alt="햄버거메뉴버튼">
                     </p>
                 </div>
 
@@ -275,83 +275,5 @@
     <script src="./js/script.js"></script>
 </body>
 
-<script>
-
-
-
-    //링크로 이동 시
-    var url = $(location).attr('href');
-    var sub_url = Number(url.substring(url.length - 1, url.length));
-    var i = isNaN(sub_url) ? 0 : sub_url;
-
-    $(".tab li a").css({ "background-color": "#f3f2ed" });
-    $(".tab li").css({ "font-weight": 200 });
-    $("#tab_" + i).css({ "background-color": "#fbe2d2" });
-    $("#tab_" + i + " a").css({ "font-weight": 400 });
-
-    $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
-    $("#item_page_" + i).css({ "display": "flex" });
-
-    $(".bn_txt h1").css({ "display": "none" });
-    $(".bn_txt h1").eq(i).css({ "display": "block" });
-
-    $("#header>img").children().css({ "display": "none" });
-    $("#header>img").eq(i).css({ "display": "block" });
-
-    //메뉴 클릭 시
-    $(".lnb li a").click(function () {
-
-        var id = $(this).parent().attr("id");
-        i = Number(id.substring(id.length - 1, id.length));
-
-
-        //메뉴 글씨 크기
-        $(".lnb li a").css({ "color": "#333", "font-weight": 200 });
-        $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
-
-        $(".tab li").css({ "background-color": "#f3f2ed" });
-        $(".tab li a").css({ "font-weight": 200, "background-color": "#f3f2ed" });
-        $("#tab_" + i).css({ "background-color": "#fbe2d2" });
-        $("#tab_" + i + " a").css({ "font-weight": 400, "background-color": "#fbe2d2" });
-
-        $(".item_page").css({ "display": "none" });
-        $("#item_page_" + i).css({ "display": "flex" });
-
-
-        $(".bn_txt h1").css({ "display": "none" });
-        $(".bn_txt h1").eq(i).css({ "display": "block" });
-        $("#header>img").css({ "display": "none" });
-        $("#header>img").eq(i).css({ "display": "block" });
-
-    });
-
-    //메뉴 클릭 시
-    $(".store_tab_box li a").click(function () {
-
-        var id = $(this).parent().attr("id");
-        i = Number(id.substring(id.length - 1, id.length));
-
-
-        //메뉴 글씨 크기
-        $(".lnb li a").css({ "color": "#333", "font-weight": 200 });
-        $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
-
-        $(".tab li").css({ "background-color": "#f3f2ed" });
-        $(".tab li a").css({ "font-weight": 200 });
-        $("#tab_" + i).css({ "background-color": "#fbe2d2" });
-        $("#tab_" + i + " a").css({ "font-weight": 400 });
-
-        $(".item_page").css({ "display": "none" });
-        $("#item_page_" + i).css({ "display": "flex" });
-
-
-        $(".bn_txt h1").css({ "display": "none" });
-        $(".bn_txt h1").eq(i).css({ "display": "block" });
-        $("#header>img").css({ "display": "none" });
-        $("#header>img").eq(i).css({ "display": "block" });
-
-    });
-
-</script>
 
 </html>
