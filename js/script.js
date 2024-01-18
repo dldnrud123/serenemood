@@ -323,26 +323,26 @@ timer(7820);
 
   // ##store 부분
 
-  
-
     //링크로 이동 시
-    // var url = $(location).attr('href');
-    // var sub_url = Number(url.substring(url.length - 1, url.length));
-    // var i = isNaN(sub_url) ? 0 : sub_url;
+    var url = $(location).attr('href');
+    var sub_url = Number(url.substring(url.length - 1, url.length));
+    var i = isNaN(sub_url) ? 0 : sub_url;
 
-    // $(".tab li a").css({ "background-color": "#f3f2ed" });
-    // $(".tab li").css({ "font-weight": 200 });
-    // $("#tab_" + i).css({ "background-color": "#fbe2d2" });
-    // $("#tab_" + i + " a").css({ "font-weight": 400 });
+    $(".tab li a").css({ "background-color": "#f3f2ed" });
+    $(".tab li").css({ "font-weight": 200, "background-color": "#f3f2ed" });
+    $("#tab_" + i).css({ "background-color": "#fbe2d2" });
+    $("#tab_" + i + " a").css({ "font-weight": 400,"background-color": "#fbe2d2" });
 
-    // $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
-    // $("#item_page_" + i).css({ "display": "flex" });
+    $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
+    $("#item_page_" + i).css({ "display": "flex" });
 
-    // $(".bn_txt h1").css({ "display": "none" });
-    // $(".bn_txt h1").eq(i).css({ "display": "block" });
+    $(".bn_txt h1").css({ "display": "none" });
+    $(".bn_txt h1").eq(i).css({ "display": "block" });
 
-    // $("#header>img").children().css({ "display": "none" });
-    // $("#header>img").eq(i).css({ "display": "block" });
+    $("#header>img").children().css({ "display": "none" });
+    $("#header>img").eq(i).css({ "display": "block" });
+
+
 
     //메뉴 클릭 시
     $(".lnb li a").click(function () {
@@ -383,9 +383,9 @@ timer(7820);
         $("#menu_" + i + " a").css({ "color": "#000", "font-weight": 400 });
 
         $(".tab li").css({ "background-color": "#f3f2ed" });
-        $(".tab li a").css({ "font-weight": 200 });
+        $(".tab li a").css({ "font-weight": 200, "background-color": "#f3f2ed" });
         $("#tab_" + i).css({ "background-color": "#fbe2d2" });
-        $("#tab_" + i + " a").css({ "font-weight": 400 });
+        $("#tab_" + i + " a").css({ "font-weight": 400, "background-color": "#fbe2d2" });
 
         $(".item_page").css({ "display": "none" });
         $("#item_page_" + i).css({ "display": "flex" });
@@ -396,4 +396,26 @@ timer(7820);
         $("#header>img").css({ "display": "none" });
         $("#header>img").eq(i).css({ "display": "block" });
 
+    });
+
+    // 원데이클래스 예약
+    
+    var form_check  = true;
+
+    $('#rsvt_btn').click(function () {
+        
+        $(this).parent('form').find('input[type!="hidden"]').each(function () {
+            if (!$(this).val() || !$("#message").val()) {
+                form_check = false;
+            }
+        });
+        
+        if (!form_check) {
+            alert("* 필수 항목을 채워주세요");
+        }
+        else {
+            alert("예약되었습니다 :D");
+        };
+
+        form_check = true;
     });
