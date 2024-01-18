@@ -257,6 +257,10 @@ body {
 
 }
 
+.store_menu{
+    cursor: pointer;
+}
+
 @media(max-width: 800px) {
 
     .logo img {
@@ -2364,7 +2368,7 @@ body {
 
 .contact_inner>h1 {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .map {
@@ -2547,11 +2551,12 @@ body {
     background-color: #223d47;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 60px 0;
 }
 
 .contact_inner {
     text-align: center;
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 #contact .section-heading {
