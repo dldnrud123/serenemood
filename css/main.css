@@ -2241,6 +2241,7 @@ body {
         width: 100%;
     }
 
+
 }
 
 /* .m_logo_concept {
@@ -2288,19 +2289,25 @@ body {
     line-height: 30px;
 }
 
-@media (max-width:1070px) {
+@media (max-width:1300px) {
     .concept_cercle {
         width: 100%;
         font-size: 15px;
+        background: none;
+    }
+
+    .cercle_text h2 {
+        font-weight: 700;
+        
+    }
+
+    .cercle_text p {
+        font-weight: 700;
     }
 
 }
 
 @media (max-width:1270px) {
-
-    #concept3 {
-        background-color: #7c5040;
-    }
 
     #concept3 .concept_inner>h1 {
         color: #fff;
@@ -2568,9 +2575,13 @@ body {
 }
 
 #onecls {
-    background-color: #fce7d9;
+    /* background-color: #fce7d9; */
+    background-image: url(../images/bg_ondaycls3.jpg);
 }
 
+#onecls mark{
+    background-color: #ffffff;
+}
 .onecls_inner {
     /* width: 50%; */
     text-align: center;
