@@ -98,7 +98,7 @@ body {
     text-align: center;
     position: relative;
     /* overflow: hidden; */
-    
+
 
 }
 
@@ -177,11 +177,12 @@ body {
 .menu_box {
     display: none;
     background-color: rgba(252, 231, 217, 0.7);
-    width: 25%;
-    height: 80%;
+    width: 25vw;
+    height: 700px;
     border-radius: 0 400px 0 0;
-    position: absolute;
-    top: 20%;
+    position: fixed;
+    z-index: 9;
+    top: 0;
     left: 0;
     padding: 20px;
     text-align: left;
@@ -226,7 +227,7 @@ body {
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
 
     .logo img {
         width: 90%;
@@ -273,31 +274,24 @@ body {
         padding-left: 10px;
     }
 
-    .menu_box {
+    /* .menu_box {
         width: 300px;
         height: 700px;
         border-radius: 0 400px 0 0;
-        top: 20%;
-        left: 0;
         padding-left: 10px;
         padding-right: 0px;
-    }
-
-
-}
-
-@media(max-width: 350px) {
-
+    } */
     .menu_box {
-        width: 100%;
-        height: 700px;
-        border-radius: 0 400px 0 0;
-        top: 20%;
-        left: 0;
-        padding-left: 10px;
-        padding-right: 0px;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        /* padding-left: 10px;
+        padding-right: 0px; */
     }
+
+
 }
+
 
 /* #pkg  */
 #pkg {
@@ -2042,7 +2036,6 @@ body {
     position: relative;
 }
 
-
 .sm_img_box {
     width: 100px;
     height: 15vh;
@@ -2085,6 +2078,8 @@ body {
 .mood_box>h1 {
     color: #fbe2d2;
     text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -2420,6 +2415,11 @@ body {
     text-align: center;
 }
 
+.package_inner h2{
+    line-height: 100%;
+}
+
+
 .package_info {
     background-color: #223d47;
     color: #fff;
@@ -2443,6 +2443,16 @@ body {
 .p_pkg,
 .b_pkg {
     padding: 30px 0;
+}
+
+.pkg_img_wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.pkg_img_wrapper img {
+    width: 100%;
 }
 
 .b_pkg {
@@ -2475,6 +2485,13 @@ body {
 .package_inner h2 {
     padding-top: 40px;
     font-size: 30px;
+}
+
+/*모바일 미디어 쿼리*/
+@media (max-width:749px) {
+    .pkg_img_wrapper {
+        width: 100%;
+    }
 }
 
 /* ## onedayClass ## */
@@ -2593,16 +2610,23 @@ body {
     background-color: #bf907e;
 }
 
-#event h1{
+#event h1 {
     line-height: 50px;
     padding-left: 30px;
+    color: #223d47;
 }
 
-.event_inner{
+.event_inner {
     width: 80%;
     margin: 0 auto;
 }
 
-.event_inner>div{
+.event_inner>div {
+    width: 80%;
+    margin: 0 auto;
     padding-bottom: 60px;
+}
+
+.event_inner>div img {
+    width: 100%;
 }
