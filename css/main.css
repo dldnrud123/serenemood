@@ -2214,6 +2214,10 @@ body {
     padding-bottom: 80px;
 }
 
+.s_logo_concept dd {
+    color: #333;
+}
+
 
 @media (max-width:1130px) {
 
@@ -2579,9 +2583,20 @@ body {
     background-image: url(../images/bg_onedaycls.jpg);
 }
 
+
+.onecls_inner p {
+    font-size: 20px;
+    padding-bottom: 80px;
+    line-height: 25px;
+    color: #333;
+}
+
 #onecls mark{
     background-color: #ffffff;
+    color: #223d47;
+    font-weight: 900;
 }
+
 .onecls_inner {
     /* width: 50%; */
     text-align: center;
@@ -2593,12 +2608,6 @@ body {
     font-size: 30px;
     padding: 20px 0;
     color: #7c5040;
-}
-
-.onecls_inner p {
-    font-size: 20px;
-    padding-bottom: 80px;
-    line-height: 25px;
 }
 
 .rsvt_btn {
@@ -2618,6 +2627,8 @@ body {
 #onecls .onecls_inner .supplies {
     line-height: 40px;
 }
+
+
 
 
 /* ##event## */
