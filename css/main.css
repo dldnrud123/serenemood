@@ -2025,6 +2025,7 @@ body {
 
 
 #serene_mood {
+    width: 100%;
     text-align: center;
     overflow: hidden;
 }
@@ -2038,7 +2039,7 @@ body {
 
 .sm_img_box {
     width: 100px;
-    height: 15vh;
+    height: 10vh;
 }
 
 .serene_box .sm_img_box>img {
@@ -2080,6 +2081,9 @@ body {
     text-align: right;
     padding: 0;
     margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -2529,6 +2533,7 @@ body {
     width: 650px;
     height: 150px;
 }
+
 
 #contact ::-webkit-input-placeholder {
     font-weight: 700;
