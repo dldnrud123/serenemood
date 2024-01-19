@@ -36,34 +36,35 @@ body {
 
 /* #loading */
 #loading {
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	position: fixed;
-	display: block;
-	background: #7c5040;
-	z-index: 99;
-	text-align: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background: #7c5040;
+    z-index: 99;
+    text-align: center;
 }
 
-#loading > img{
+#loading>img {
     width: 50px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-	z-index: 100;
+    z-index: 100;
 }
 
-#loading > h3{
+#loading>h3 {
     color: #fff;
     position: absolute;
-	top: 60%;
-	left: 50%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
-	z-index: 100;
+    z-index: 100;
 }
+
 /* #top */
 .eng_title {
     font-size: 40px;
@@ -134,9 +135,79 @@ body {
 
 .video_wrapper {
     overflow: hidden;
+    width: 100vw;
     height: 100vh;
+}
+
+
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+
+    .video_wrapper video {
+        width: auto;
+    }
+
+}
+
+
+.header_img_wrapper {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    animation: header_img_animation 2s linear;
+    border-radius: 100%;
+    opacity: 0.6;
+}
+
+@media(max-width: 800px) {
+
+    .header_img_wrapper {
+        width: 600px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .header_img_wrapper {
+        width: 400px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .header_img_wrapper {
+        width: 300px;
+    }
+}
+
+@media(max-width: 300px) {
+
+    .header_img_wrapper {
+        width: 200px;
+    }
+}
+
+
+.header_img_wrapper img {
     width: 100%;
-    /* margin: 0 auto; */
+}
+
+@keyframes header_img_animation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%)  scale(0);
+    }
+
+    60% {
+        transform:translate(-50%, -50%)scale(1.2);
+    }
+
+    100% {
+        transform:translate(-50%, -50%)scale(1);
+        
+    }
 }
 
 
@@ -257,7 +328,7 @@ body {
 
 }
 
-.store_menu{
+.store_menu {
     cursor: pointer;
 }
 
@@ -2336,7 +2407,7 @@ body {
 
     .cercle_text h2 {
         font-weight: 700;
-        
+
     }
 
     .cercle_text p {
@@ -2464,7 +2535,7 @@ body {
     text-align: center;
 }
 
-.package_inner h2{
+.package_inner h2 {
     line-height: 100%;
 }
 
@@ -2628,7 +2699,7 @@ body {
     color: #333;
 }
 
-#onecls mark{
+#onecls mark {
     background-color: #ffffff;
     color: #223d47;
     font-weight: 900;
