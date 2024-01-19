@@ -744,6 +744,7 @@ body {
 
 .item_info_box {
     width: 30%;
+    height: 100%;
     text-align: right;
 }
 
@@ -751,8 +752,8 @@ body {
     display: none;
     padding-top: 50px;
     text-align: center;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 95%;
     background-color: #fce7d9;
     border-radius: 200px 200px 200px 0;
     z-index: 2;
@@ -874,15 +875,18 @@ body {
 }
 
 /*모바일 미디어 쿼리*/
-@media (max-width:749px) {
+@media (max-width:1000px) {
 
-    .new_slide {
+    #new{
+        display: none;
+    }
+    /* .new_slide {
         display: none;
     }
 
     .new_acdn {
         display: block;
-    }
+    } */
 }
 
 
@@ -890,14 +894,15 @@ body {
 #best {
     width: 100%;
     text-align: center;
-    background-color: #fce7d9;
-    background: #fce7d9 url(../images/bg_top3.png) top center no-repeat;
+    background-color:#e3c9bf;
+    /* background-color: #fce7d9;
+    background: #fce7d9 url(../images/bg_top3.png) top center no-repeat; */
 }
 
 .best_inner {
     width: 70%;
     margin: 0 auto;
-    padding-top: 230px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
