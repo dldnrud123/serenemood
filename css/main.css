@@ -2771,3 +2771,21 @@ body {
 .event_inner>div img {
     width: 100%;
 }
+
+@media (max-width:749px) {
+
+    .event_inner{
+        width: 100%;
+    }
+    .event_inner >div{
+        width: 100%;
+    }
+
+    .event_inner >div a img{
+        width: 100%;
+    }
+    
+    .event_inner .event_banner1{
+        padding-bottom: 20px;
+    }
+}
